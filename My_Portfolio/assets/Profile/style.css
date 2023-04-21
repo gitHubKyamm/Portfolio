@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+/* profile start */
+header {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+  background-color: white;
+}
+header section article::after {
+  margin-top: 10px;
+  content: "";
+  height: 3px;
+  width: 100%;
+  display: block;
+  background-color: #555555;
+}
+header section article .profile {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+header section article .profile .profile_img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 2rem 3rem;
+}
+header section article .profile .profile_details {
+  width: 100%;
+}
+header section article .profile .profile_details .follower_details {
+  width: 65%;
+  padding-block: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+header section article .profile .profile_details .user_name {
+  padding-block: 1%;
+}
+/* profile end */
+/* post start */
+main section article {
+  width: 100%;
+}
+/* post container start */
+main section article .post_container .post_header_text {
+  padding-top: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+main section article .post_container .post_header_text h3 {
+  padding-left: 3rem;
+  font-size: 1.5rem;
+}
+main section article .post_container .post_header_text h3 a {
+  text-decoration: none;
+  color: black;
+}
+main section article .post_container .post_header_text h3::after {
+  margin-top: 10px;
+  content: "";
+  height: 3px;
+  width: 100%;
+  display: block;
+  background-color: #555555;
+}
+main section article .post_container .post_header_text p:last-child {
+  padding-right: 3rem;
+}
+/* post container end */
+/* posts start */
+main section article .post_container .posts {
+  margin-top: 2%;
+  width: 98%;
+  margin-inline: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+main section article .post_container .posts img {
+  width: 250px;
+  height: 400px;
+  border-radius: 8px;
+}
+main section article .post_container .posts .image_text {
+  position: relative;
+  transition: scale 1s;
+}
+main section article .post_container .posts .image_text:hover {
+  scale: 1.05;
+  filter: saturate(200%);
+}
+main section article .post_container .posts .image_text p {
+  height: 10vh;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 1%;
+  color: white;
+  overflow: hidden;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #474749;
+}

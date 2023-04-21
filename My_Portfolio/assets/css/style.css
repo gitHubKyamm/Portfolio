@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&family=Roboto&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: var(--primaryFont);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bgColor);
+  border-radius: 0px 0px 20px 20px;
+}
+
+:root {
+  --logoFont: "Pacifico", cursive;
+  --secondaryFont: "Roboto", sans-serif;
+  --primaryFont: "Playfair Display", serif;
+  --primaryColor: #2c2f36;
+  --headerTextColor: blue;
+  --textColor: #85888f;
+  --bgColor: #fafafa;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+header section article .nav {
+  top: 0;
+  position: sticky;
+  display: flex;
+  background-color: var(--bgColor);
+  border-radius: 10px 10px 0px 0px;
+  height: 10vh;
+}
+header section article .nav .header_left {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header section article .nav .header_left h2 {
+  font-family: var(--logoFont);
+  font-size: 2rem;
+  color: var(--headerTextColor);
+}
+header section article .nav .header_right_details {
+  width: 80%;
+  display: flex;
+}
+header section article .nav .header_right_details .header_main {
+  width: 80%;
+}
+header section article .nav .header_right_details .header_main ul {
+  display: flex;
+  flex-wrap: wrap;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+}
+header section article .nav .header_right_details .header_main ul li {
+  list-style-type: none;
+  transition: 1.3s;
+}
+header section article .nav .header_right_details .header_main ul li:hover {
+  scale: 1.3;
+}
+header section article .nav .header_right_details .header_main ul li:active {
+  transition: 0.4s;
+  scale: 0.2;
+}
+header section article .nav .header_right_details .header_main ul li a {
+  color: var(--primaryColor);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+header section article .nav .header_right_details .header_right {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header section article .nav .header_right_details .header_right button {
+  padding: 2% 3%;
+  border-radius: 50px;
+  box-shadow: 2px 2px 10px var(--textColor);
+  background-color: var(--primaryColor);
+  border: none;
+  transition: 1.2s;
+}
+header section article .nav .header_right_details .header_right button a {
+  color: var(--bgColor);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: var(--secondaryFont);
+}
+
+main section article #hero {
+  display: flex;
+}
+main section article #hero .hero_left {
+  margin-left: 2%;
+  width: 50%;
+  background-color: var(--headerTextColor);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+main section article #hero .hero_left img {
+  margin: 5%;
+  width: 500px;
+  min-width: 200px;
+  height: 500px;
+  animation: waveAni 10s linear infinite;
+}
+@keyframes waveAni {
+  0%, 100% {
+    border-radius: 45% 55% 70% 35%/70% 30% 90% 40%;
+  }
+  25% {
+    border-radius: 55% 45% 30% 35%/50% 30% 60% 10%;
+  }
+  50% {
+    border-radius: 65% 35% 35% 65%/40% 60% 30% 70%;
+  }
+  25% {
+    border-radius: 35% 65% 60% 40%/70% 30% 40% 60%;
+  }
+}
+main section article #hero .hero_right {
+  width: 50%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+main section article #hero .hero_right .hero_right_text {
+  text-align: justify;
+  padding-left: 20%;
+  padding-bottom: 4%;
+}
+main section article #hero .hero_right .hero_right_text p {
+  font-size: 1.2rem;
+  color: var(--textColor);
+}
+main section article #hero .hero_right .hero_right_text h2 {
+  color: var(--headerTextColor);
+  font-size: 3rem;
+}
+main section article #hero .hero_right .hero_btn_right button {
+  margin-left: 20%;
+  padding: 1% 10%;
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px var(--primaryColor);
+}
+main section article #hero .hero_right .hero_btn_right button:hover a {
+  display: inline-block;
+  transform: translateX(3%);
+}
+main section article #hero .hero_right .hero_btn_right button a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--bgColor);
+}
+main section article #services {
+  padding-top: 2%;
+  width: 100%;
+  display: flex;
+}
+main section article #services .services_left {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+main section article #services .services_left .services_left_details {
+  text-align: justify;
+  padding-left: 10%;
+  width: 80%;
+}
+main section article #services .services_left .services_left_details h2 {
+  color: var(--headerTextColor);
+  font-family: var(--secondaryFont);
+  font-size: 2rem;
+}
+main section article #services .services_left .services_left_details p {
+  color: var(--textColor);
+  padding: 2% 1%;
+  font-family: var(--secondaryFont);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-indent: 50px;
+}
+main section article #services .services_left .services_left_details p strong {
+  color: var(--primaryColor);
+}
+main section article #services .services_left .services_left_details p strong:last-child {
+  font-size: 1.5rem;
+  color: var(--headerTextColor);
+}
+main section article #services .services_right {
+  width: 50%;
+}
+main section article #services .services_right .services_right_details img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--primaryColor);
+  transition: 2s;
+}
+main section article #services .services_right .services_right_details img:hover {
+  transform: rotateZ(360deg);
+}
+main section article #services .services_right .services_right_details .services_top_img {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2%;
+}
+main section article #services .services_right .services_right_details .services_bottom_img {
+  display: flex;
+  justify-content: space-around;
+}
+main section article #skills .skills_details {
+  padding-top: 4%;
+  width: 100%;
+  background-color: var(--bgColor);
+}
+main section article #skills .skills_details h2 {
+  color: var(--headerTextColor);
+  font-family: var(--secondaryFont);
+  font-size: 3rem;
+  text-align: center;
+}
+main section article #skills .skills_details p {
+  font-family: var(--secondaryFont);
+  color: var(--textColor);
+  padding: 2% 20%;
+  text-align: center;
+}
+main section article #skills .skills_details p strong {
+  color: var(--primaryColor);
+  font-size: 1.3rem;
+}
+main section article #skills .skills_details .skills_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main section article #skills .skills_details .skills_img img {
+  width: 200px;
+  height: 200px;
+  margin: 2%;
+  padding: 2%;
+  background-color: var(--primaryColor);
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px var(--primaryColor);
+}
+main section article #projects .projects_details .projects_header {
+  font-size: 3rem;
+  color: var(--headerTextColor);
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+main section article #projects .projects_details .projects_img {
+  padding-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main section article #projects .projects_details .projects_img .projects_img_details {
+  position: relative;
+  filter: brightness(0.4);
+}
+main section article #projects .projects_details .projects_img .projects_img_details .img_text_details {
+  position: absolute;
+  bottom: 4%;
+  background-color: var(--bgColor);
+  border-radius: 0px 0px 20px 20px;
+  width: 100%;
+  opacity: 0.5;
+}
+main section article #projects .projects_details .projects_img .projects_img_details .img_text_details h2,
+main section article #projects .projects_details .projects_img .projects_img_details .img_text_details p {
+  padding-left: 20px;
+}
+main section article #projects .projects_details .projects_img .projects_img_details:hover {
+  filter: brightness(0.8);
+}
+main section article #projects .projects_details .projects_img a img {
+  max-width: 450px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px var(--primaryColor);
+}
+
+footer section article #contact .contact_details {
+  margin-top: 5%;
+  background-color: var(--textColor);
+  height: 20vh;
+}
+footer section article #contact .contact_details .contact_social {
+  position: relative;
+  text-align: center;
+}
+footer section article #contact .contact_details .contact_social:hover .contact_dropdown {
+  display: block;
+  top: 0;
+  margin: 0% 45%;
+  background-color: var(--bgColor);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px var(--primaryColor);
+  animation: YAxis 2s ease-in-out forwards infinite;
+}
+@keyframes YAxis {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+footer section article #contact .contact_details .contact_social span {
+  display: inline-block;
+  padding-top: 2vh;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: blue;
+}
+footer section article #contact .contact_details .contact_social .contact_dropdown {
+  position: absolute;
+  top: 2;
+  display: none;
+}
+footer section article #contact .contact_details .contact_social .contact_dropdown .contact_dropdown_details {
+  display: flex;
+}
+footer section article #contact .contact_details .contact_social .contact_dropdown .contact_dropdown_details a {
+  display: flex;
+  font-size: 1.5rem;
+  color: var(--textColor);
+}
+footer section article #contact .contact_details .contact_social .contact_dropdown .contact_dropdown_details a img {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+footer section article #contact .contact_copyright {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  header section article .nav {
+    display: block;
+    height: auto;
+  }
+  header section article .nav .header_left {
+    width: 100%;
+  }
+  header section article .nav .header_left h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  header section article .nav .header_right_details {
+    width: 100%;
+  }
+  header section article .nav .header_right_details .header_main {
+    width: 80%;
+    display: inline-block;
+  }
+  header section article .nav .header_right_details .header_right {
+    width: 20%;
+  }
+  main section article #hero .hero_right .hero_right_text {
+    padding-left: 8%;
+    padding-top: 2%;
+  }
+  main section article #hero .hero_right .hero_right_text p {
+    font-size: 1.3rem;
+  }
+  main section article #services .services_left p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  header section article .nav {
+    display: block;
+    height: auto;
+    margin-bottom: 1%;
+    z-index: 99;
+  }
+  header section article .nav .header_left {
+    width: 100%;
+  }
+  header section article .nav .header_left h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  header section article .nav .header_right_details {
+    display: block;
+    width: 100%;
+  }
+  header section article .nav .header_right_details .header_main {
+    width: 100%;
+  }
+  header section article .nav .header_right_details .header_main ul li a {
+    font-size: 1.2rem;
+  }
+  header section article .nav .header_right_details .header_right {
+    width: 100%;
+    text-align: center;
+  }
+  header section article .nav .header_right_details .header_right button {
+    padding: 2% 35%;
+    margin-bottom: 2%;
+  }
+  header section article .nav .header_right_details .header_right button a {
+    font-size: 1.5rem;
+  }
+  main section article #hero {
+    display: block;
+  }
+  main section article #hero .hero_left {
+    margin-left: 0%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+  }
+  main section article #hero .hero_right {
+    width: 100%;
+  }
+  main section article #hero .hero_right .hero_right_text {
+    padding-left: 10%;
+    padding-top: 2%;
+  }
+  main section article #hero .hero_right .hero_right_text p {
+    font-size: 1.5rem;
+  }
+  main section article #hero .hero_right .hero_btn_right button {
+    display: none;
+  }
+  main section article #services {
+    display: block;
+  }
+  main section article #services .services_left {
+    width: 100%;
+  }
+  main section article #services .services_right {
+    margin-top: 2%;
+    width: 100%;
+  }
+  main section article #skills {
+    display: block;
+  }
+  main section article #skills .skills_details h2 {
+    font-size: 1.8rem;
+  }
+  main section article #skills .skills_details p {
+    font-size: 1.1rem;
+  }
+  main section article #skills .skills_details p strong {
+    font-size: 1.3rem;
+  }
+  main section article #skills .skills_details .skills_img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main section article #projects .projects_details .projects_header {
+    letter-spacing: 1px;
+  }
+  main section article #projects .projects_details .projects_img a {
+    z-index: 1;
+  }
+  main section article #projects .projects_details .projects_img a img {
+    margin-bottom: 4%;
+    width: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */

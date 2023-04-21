@@ -1,0 +1,173 @@
+@media (max-width: 1024px) {
+  header {
+    section {
+      article {
+        .nav {
+          display: block;
+          height: auto;
+          .header_left {
+            width: 100%;
+            h2 {
+              font-size: 4rem;
+              text-align: center;
+            }
+          }
+          .header_right_details {
+            width: 100%;
+            .header_main {
+              width: 80%;
+              display: inline-block;
+            }
+            .header_right {
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    section {
+      article {
+        #hero {
+          .hero_right {
+            .hero_right_text {
+              padding-left: 8%;
+              padding-top: 2%;
+              p {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+        #services {
+            .services_left {
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    section {
+      article {
+        .nav {
+          display: block;
+          height: auto;
+          margin-bottom: 1%;
+          z-index: 99;
+          .header_left {
+            width: 100%;
+            h2 {
+              font-size: 3rem;
+              text-align: center;
+            }
+          }
+          .header_right_details {
+            display: block;
+            width: 100%;
+            .header_main {
+              width: 100%;
+              ul {
+                li {
+                  a {
+                    font-size: 1.2rem;
+                  }
+                }
+              }
+            }
+            .header_right {
+              width: 100%;
+              text-align: center;
+              button {
+                padding: 2% 35%;
+                margin-bottom: 2%;
+                a {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    section {
+      article {
+        #hero {
+          display: block;
+          .hero_left {
+            margin-left: 0%;
+            width: 100%;
+            border-radius: 0px 0px 20px 20px;
+          }
+          .hero_right {
+            width: 100%;
+            .hero_right_text {
+              padding-left: 10%;
+              padding-top: 2%;
+              p {
+                font-size: 1.5rem;
+              }
+            }
+            .hero_btn_right {
+              button {
+                display: none;
+              }
+            }
+          }
+        }
+        #services {
+          display: block;
+          .services_left {
+            width: 100%;
+          }
+          .services_right {
+            margin-top: 2%;
+            width: 100%;
+          }
+        }
+        #skills {
+          display: block;
+          .skills_details {
+            h2 {
+              font-size: 1.8rem;
+            }
+            p {
+              font-size: 1.1rem;
+              strong {
+                font-size: 1.3rem;
+              }
+            }
+            .skills_img {
+              display: flex;
+              flex-wrap: wrap;
+            }
+          }
+        }
+        #projects {
+          .projects_details {
+            .projects_header {
+              letter-spacing: 1px;
+            }
+            .projects_img {
+              a {
+                z-index: 1;
+                img {
+                  margin-bottom: 4%;
+                  width: 300px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
